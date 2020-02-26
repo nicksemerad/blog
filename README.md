@@ -1,24 +1,36 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+MVC -- building blocks of all apps
+  Models
+    - represents a database 
+    - table base rules
+  Views
+    - what the user sees and interacts with
+    - client side, front end
+  Controllers
+    - specify what we do when we hit a certain route
+      - actions for these routes
+    routes
+      - traffic directors
 
-Things you may want to cover:
+Rails convention over configuration 
+  - uses the same patterns, on different instances 
 
-* Ruby version
 
-* System dependencies
+WHEN NAMING
+models - singular
+controllers - plural
 
-* Configuration
 
-* Database creation
+Blog
 
-* Database initialization
+Pages
+  title: string
+  author: string
+  body: text
+ #nicksemerad$ bundle exec rails g model Page title:string author:string body:text
 
-* How to run the test suite
+Comments
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Migration
+  -instructions to apply to database
