@@ -29,8 +29,31 @@ Pages
   author: string
   body: text
  #nicksemerad$ bundle exec rails g model Page title:string author:string body:text
+ makes a new model with those keys
 
 Comments
 
 Migration
   -instructions to apply to database
+
+
+
+  $ bundle exec rails g controller Pages index show new edit -- new controller with 4 pages
+
+
+  CONTROLLER ACTIONS
+    -index --show all pages
+    -show --shows single page
+    -new --new form
+    -create --new object
+    -edit --edit form
+    -update --update object
+    -destroy --deletes the object
+
+ERB
+  -embedded ruby
+can run ruby code in html, must specify
+
+<% rubycodegoeshere %>    this is a non-echoing tag, for a ruby object not displayed
+
+<%= rubycodehere %>     this is an echoing tag, is displayed on screen
